@@ -2,9 +2,11 @@ package com.epam.utils;
 
 public class StringUtils {
     public static boolean isPositiveNumber(String str) {
-        if (str == null) {
+
+        if (str == null || org.apache.commons.lang3.StringUtils.isBlank(str)) {
             return false;
         }
+
 
         if (str.startsWith("+")) {
             return isPositiveNumber(str.substring(1));
