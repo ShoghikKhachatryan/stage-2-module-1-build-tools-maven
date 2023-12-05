@@ -15,6 +15,7 @@
 
     <properties>
         <junit.version>5.8.1</junit.version>
+        <maven.jar.plugin.version>3.1.0</maven.jar.plugin.version>
     </properties>
     <dependencyManagement>
         <dependencies>
@@ -29,7 +30,9 @@
     <build>
         <plugins>
             <plugin>
-                <!-- something should be here-->
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>3.3.0</version>
             </plugin>
         </plugins>
     </build>
